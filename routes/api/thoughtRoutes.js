@@ -10,7 +10,7 @@ const {
 } = require('../../controllers/thoughtController');
 
 //API GET all and POST thought
-router.route('/').get(getThought).post(CreateThought);
+router.route('/').get(getThought).post(createThought);
 
 //API thoughts/ GET one thought, PUT and DELETE
 router.route('/;thoughtId')
@@ -24,6 +24,6 @@ router.route('/:thoughtId/reactions')
 
 //API thought DELETE reactions by ID
 router.route('/:thoughtID/reactions/:reactionId')
-.delete(DeleteReaction);
+.delete(deleteReaction);
 
 module.exports = router;
