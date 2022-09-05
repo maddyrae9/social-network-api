@@ -1,6 +1,7 @@
 const { connect, connection } = require("mongoose");
 
-const connectionString = process.env.MONGODB_URI ||"mongodb://localhost:27017/socailDB";
+const connectionString = 
+process.env.MONGODB_URI ||"mongodb://localhost:27017/socailDB";
 
 connect(connectionString, {
     useNewUrlParser: true,
